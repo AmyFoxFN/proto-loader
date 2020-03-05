@@ -9,12 +9,9 @@
     "sourceMap": true,
     "noImplicitAny": false,
     "baseUrl": "./",
-    "paths": {
-      "three-pixel-picking": ["src/"]
-    },
     "experimentalDecorators": true
   },
   "include": [
-    "./src/**/*"
+    "example/**/*"
   ]
 }

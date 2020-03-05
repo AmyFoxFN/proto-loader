@@ -13,7 +13,7 @@ const devConfig = merge.smart(baseConfig, {
     port: 8000,
     open: true
   },
-  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })]
+  plugins: [new HtmlWebpackPlugin({ template: './example/index.html' })]
 })
 
 module.exports = checkPort(devConfig)
