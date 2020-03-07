@@ -1,0 +1,8 @@
+import "common.proto";
+package imported;
+
+message Imported {
+  required int32 id = 1;      // ID
+  required string str = 2;    // str
+  repeated item helloArr = 3; // optional field
+}
