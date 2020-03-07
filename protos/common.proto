@@ -1,0 +1,5 @@
+package common;
+message Common {
+  required int32 index = 1;
+  required string score = 2;
+}

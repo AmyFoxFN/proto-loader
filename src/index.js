@@ -7,7 +7,8 @@ async function main() {
   BasicMessage = root.lookupType("awesomepackage.AwesomeMessage")
   console.log('BasicMessage:', BasicMessage)
 
-  parseImportProto('src/protos/imported.proto')
+  // parseImportProto('src/protos/imported.proto')
+  parseImportProto('protos/imported.proto')
 }
 
 async function parseImportProto(path) {

@@ -1,0 +1,8 @@
+import "common.proto";
+package import;
+
+message Import {
+  required int32 id = 1;      // ID
+  required string str = 2;    // str
+  repeated Common common = 3; // optional field
+}
