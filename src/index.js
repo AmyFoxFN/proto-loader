@@ -7,7 +7,11 @@ async function main() {
   BasicMessage = root.lookupType("awesomepackage.AwesomeMessage")
   console.log('BasicMessage:', BasicMessage)
 
-  const rootImport = await protoBuf.load('src/protos/imported.proto')
+  parseImportProto('src/protos/imported.proto')
+}
+
+async function parseImportProto(path) {
+  const rootImport = await protoBuf.load(path)
   console.log('ImportedRoot:', rootImport)
 
   const commonMessage = rootImport.lookupType("common.Common")
