@@ -10,8 +10,8 @@ async function main() {
   const rootImport = await protoBuf.load('src/protos/imported.proto')
   console.log('ImportedRoot:', rootImport)
 
-  const commonMessage = rootImport.lookupType("common.Item")
-  const importedMessage = rootImport.lookupType("imported.Imported")
+  const commonMessage = rootImport.lookupType("common.Common")
+  const importMessage = rootImport.lookupType("import.Import")
   console.log('commonMessage:', commonMessage)
-  console.log('importedMessage:', importedMessage)
+  console.log('importedMessage:', importMessage)
 }

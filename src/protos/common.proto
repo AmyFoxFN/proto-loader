@@ -1,5 +1,5 @@
 package common;
-message Item {
+message Common {
   required int32 index = 1;
   required string score = 2;
 }
