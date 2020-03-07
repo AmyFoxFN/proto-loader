@@ -30,11 +30,6 @@ async function parseImportProto(path) {
 async function parsePoseProto() {
   const root = await protoBuf.load('private-protos/pose.proto')
   console.log('root:', root)
-
-  // const commonMessage = rootImport.lookupType("common.Common")
-  // const importMessage = rootImport.lookupType("import.Import")
-  // console.log('commonMessage:', commonMessage)
-  // console.log('importedMessage:', importMessage)
 }
 
 
